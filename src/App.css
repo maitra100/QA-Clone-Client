@@ -1,38 +1,274 @@
-.App {
-  text-align: center;
+#header{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  background-color: #2C2C2C;
+  height:9vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#headerRight{
+  margin-right:2%;
+  display:flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  background-color: #EEEEEE;
+  min-height:100vh;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#center{
+  display:flex;
+  flex-direction: column;
+  margin-left: 22%;
+  margin-right: 22%;
+  margin-top:5%;
+  background-color: #EEEEEE;
+}
+
+.input{
+  margin-bottom: 3%;
+  height:6vh;
+  border-radius: 10px;
+  border: solid 2px white;
+  background-color: white;
+  padding-left: 5%;
+  font-size: 15px;
+}
+
+#submit{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.button{
+  width:25%;
+  padding: 1%;
+  height:9vh;
+  border-collapse: separate; 
+  border:solid 0px #1D9BF0;
+  background-color:#1D9BF0;
+  color:rgb(230, 227, 227);
+  border-radius: 10px;
+  font-size: small;
+  cursor:pointer;
+}
+
+#bottom{
+  display:flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#board{
+  display: flex;
+  justify-content: space-between;
+  background-color: #CFCFCF;
+  margin-left:2%;
+  margin-right:2%;
+  margin-bottom: 2%;
+  width: 65vw;
+  border-radius: 5px;
+}
+
+#board2{
+  display: flex;
+  justify-content: space-between;
+  background-color: #CFCFCF;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+#boards{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#left{
+  margin-left: 5%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  cursor:pointer;
+}
+
+#right{
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.button2{
+  width:7vw;
+  padding: 1%;
+  height:8vh;
+  border-collapse: separate; 
+  border:solid 0px #DDDDDD;
+  background-color:#DDDDDD;
+  color:#000000;
+  border-radius: 10px;
+  font-size: small;
+  cursor:pointer;
+}
+
+.button5{
+  width:7vw;
+  padding: 1%;
+  height:6vh;
+  border-collapse: separate; 
+  border:solid 0px #4E4E4E;
+  background-color:#4E4E4E;
+  color:#FFFFFF;
+  border-radius: 10px;
+  font-size: small;
+  margin-top:8px;
+  cursor:pointer;
+}
+
+#live{
+  margin-left: 1%;
+}
+
+#live2{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#down{
+  display:flex;
+  flex-direction: column;
+}
+
+#cards{
+  display: flex;
+  flex-direction: column;
+}
+
+#card{
+  display: flex;
+  margin-left: 10%;
+  background-color: white;
+  margin-right: 10%;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+
+#like{
+  background-color: #EEEEEE;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#question{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  width:50%;
+}
+
+#ask{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#ques{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  height:10vh;
+  border: solid 2px white;
+  padding-left: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button3{
+  width:7vw;
+  padding: 1%;
+  height:8vh;
+  border-collapse: separate; 
+  border:solid 0px #1D9BF0;
+  background-color:#1D9BF0;
+  color:white;
+  border-radius: 10px;
+  font-size: small;
+  cursor:pointer;
+}
+
+@media only screen and (max-width:500px){
+  #header{
+    display:flex;
+    justify-content: center;
+    width:100vw;
+    background-color: #2C2C2C;
+    height:9vh;
+    padding-left:0%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .button2{
+    width:8vw;
+    padding: 1%;
+    height:6vh;
+    border-collapse: separate; 
+    border:solid 0px #DDDDDD;
+    background-color:#DDDDDD;
+    color:#000000;
+    border-radius: 10px;
+    font-size: x-small;
+    cursor:pointer;
   }
+
+  .button{
+    width:40%;
+    padding: 1%;
+    height:6vh;
+    border-collapse: separate; 
+    border:solid 0px #1D9BF0;
+    background-color:#1D9BF0;
+    color:rgb(230, 227, 227);
+    border-radius: 10px;
+    font-size: xx-small;
+    cursor:pointer;
+  }
+
+  #bottom{
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+  }
+
+  #live{
+    margin-left: 1%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #live2{
+    margin-left: 10%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .button3{
+  width:7vw;
+  padding: 1%;
+  height:6vh;
+  border-collapse: separate; 
+  border:solid 0px #1D9BF0;
+  background-color:#1D9BF0;
+  color:white;
+  border-radius: 10px;
+  font-size: small;
+  cursor:pointer;
+}
 }
